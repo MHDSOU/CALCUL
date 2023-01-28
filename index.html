@@ -8,19 +8,58 @@
   
   <title>Frontend Mentor | Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body style="background-color: rgb(59, 71, 99);" class="w-screen h-screen flex items-center justify-center">
+  <main>
+    <section>
+      <!--! navbar-->
+      <div class="flex justify-between items-center p-1">
+        <h1 class="font-bold text-lg text-white">calc</h1>
+        <div class="flex items-center gap-4">
+          <p class="uppercase text-xs font-semibold text-white">theme</p>
+          <div style="background-color: rgb(37, 45, 67);" class="flex p-1 rounded-3xl w-16">
+            <div class="h-4 w-4 bg-red-600 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+      <!--! result-->
+      <div style="background-color: rgb(37, 45, 67);" class="flex justify-end py-4 px-4 rounded-lg bg-blue-700 my-4">
+        <h1 class="text-3xl font-bold text-white">399,981</h1>
+      </div>
+      <!--! button-->
+      <div style="background-color: rgb(37, 45, 67);" class="p-4 rounded">
+        <div class="flex gap-2 my-4 justify-between">
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">7</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">8</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">9</button>
+          <button class="px-8 py-2 bg-sky-700 text-white rounded-lg text-xl font-extrabold border-b-4 border-blue-700 w-24">DEL</button>
+        </div>
+        <div class="flex gap-2 my-4 justify-between">
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">4</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">5</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">6</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">+</button>
+        </div>
+        <div class="flex gap-2 my-4 justify-between">
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">1</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">2</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">3</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">-</button>
+        </div>
+        <div class="flex gap-2 my-4 justify-between">
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">.</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">0</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">/</button>
+          <button style="color: rgb(37, 45, 67);" class="px-8 py-2 bg-orange-100 rounded-lg text-xl font-extrabold text-indigo-800 border-b-4 border-gray-300 w-24">X</button>
+        </div>
+        <div class="flex gap-2 my-4 justify-between">
+          <button class="py-2 bg-sky-700 text-white flex-1 rounded-lg font-bold border-b-4 border-sky-800">reset</button>
+          <button class="py-2 bg-red-600 text-white flex-1 rounded-lg font-bold border-b-4 border-orange-900">=</button>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
